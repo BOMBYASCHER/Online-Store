@@ -100,24 +100,26 @@ ul {
     position: absolute;
     width: 0px;
     height: 0px;
-    margin: 13% 13%;
+    margin: 13% 8%;
     padding: 20% 10%;
     border-radius: 20px;
     background-color: #262626;
 }
 
 .titlefilrt {
+    position: absolute;
     font-size: 40px;
     color: hsla(204, 70%, 53%);
     text-align: justify;
+    margin: 0% 90% 0% 0%;
 }
 
 .block3 {
     position: absolute;
     width: 0%;
     height: 0%;
-    margin: 13% 35%;
-    padding: 3% 32%;
+    margin: 13% 30%;
+    padding: 3% 33%;
     border-radius: 20px;
     background-color: #262626;
 }
