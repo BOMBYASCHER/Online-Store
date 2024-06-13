@@ -10,7 +10,7 @@ body {
 }
 
 .block1 {
-    position: fixed;
+    position: relative;
     background: #262626;
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
 }
 
 .title1 {
-    margin-left: 4%;
+    margin-left: 6%;
     margin-right: 4%;
     font-size: 40px;
     padding-top: 50px;
@@ -102,7 +102,7 @@ ul {
     position: absolute;
     width: 21%;
     height: 70%;
-    margin: 13% 8%;
+    margin: 2% 8%;
     border-radius: 20px;
     background-color: #262626;
 }
@@ -138,7 +138,7 @@ ul {
     position: absolute;
     width: 64%;
     height: 8%;
-    margin: 13% 30%;
+    margin: 2% 30%;
     padding: 3% 33%;
     border-radius: 20px;
     background-color: #262626;
