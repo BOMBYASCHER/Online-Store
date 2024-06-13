@@ -116,10 +116,44 @@ ul {
 
 .block3 {
     position: absolute;
-    width: 0%;
-    height: 0%;
+    width: 64%;
+    height: 8%;
     margin: 13% 30%;
-    padding: 3% 33%;
     border-radius: 20px;
     background-color: #262626;
+}
+* {box-sizing: border-box;}
+form {
+  width: auto;
+  float: right;
+  margin-right: 880px;
+  margin-top: 19px;
+}
+input {
+  width: 300px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 5px solid  rgb(52, 152, 219);
+  background: #f7f7f7;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+input:focus {
+  width: 300px;
+}
+button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: rgb(0, 0, 0);
 }
