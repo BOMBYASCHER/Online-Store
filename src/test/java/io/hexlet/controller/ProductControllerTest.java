@@ -20,6 +20,17 @@ public class ProductControllerTest {
     private Product product;
 
     @Test
+    void testIndex() throws Exception {
+        var request = get("/api/products");
+        var response = mockMvc.perform(request)
+                .andExpect(status().isOk())
+                .andReturn()
+                .getResponse()
+                .getContentAsString();
+        assertThatJson(response).isArray();
+    }
+
+    @Test
     void testShow() throws Exception {
         var request = get("/api/products/54");
         var response = mockMvc.perform(request)
@@ -27,7 +38,7 @@ public class ProductControllerTest {
                 .andReturn()
                 .getResponse()
                 .getContentAsString();
-        assertThatJson(request).isNotNull();
+        assertThatJson(response).isNotNull();
     }
 
     @Test
