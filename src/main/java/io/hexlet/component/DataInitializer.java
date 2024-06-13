@@ -4,7 +4,6 @@ import io.hexlet.model.Category;
 import io.hexlet.model.Product;
 import io.hexlet.repository.CategoryRepository;
 import io.hexlet.repository.ProductRepository;
-import lombok.extern.slf4j.Slf4j;
 import net.datafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -14,7 +13,6 @@ import org.springframework.stereotype.Component;
 import java.util.Locale;
 
 @Component
-@Slf4j
 public class DataInitializer implements ApplicationRunner {
     @Autowired
     private ProductRepository productRepository;
@@ -25,14 +23,17 @@ public class DataInitializer implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) {
         var faker = new Faker(Locale.ENGLISH);
-        Category smartphonesCategory = new Category();
-        smartphonesCategory.setTitle("cameras");
-        try {
+        var title = "cameras";
+        Category smartphonesCategory;
+        var optionalCategory = categoryRepository.findByTitle(title);
+        if (optionalCategory.isPresent()) {
+            smartphonesCategory = optionalCategory.get();
+        } else {
+            var category = new Category();
+            category.setTitle(title);
+            smartphonesCategory = category;
             categoryRepository.save(smartphonesCategory);
-        } catch (Exception e) {
-            log.warn(e.getMessage());
         }
-
         for (int i = 0; i < 100; i++) {
             var product = new Product();
             product.setTitle(faker.camera().brandWithModel());
