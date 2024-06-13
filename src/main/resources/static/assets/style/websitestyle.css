@@ -143,3 +143,30 @@ ul {
     border-radius: 20px;
     background-color: #262626;
 }
+
+.tovar {
+    position: absolute;
+    width: 64%;
+    height: 25%;
+    margin: 260px 30%;
+    border-radius: 20px;
+    background-color: #262626;
+}
+
+.tovar2 {
+    position: absolute;
+    width: 64%;
+    height: 25%;
+    margin: 490px 30%;
+    border-radius: 20px;
+    background-color: #262626;
+}
+
+.tovar3 {
+    position: absolute;
+    width: 64%;
+    height: 25%;
+    margin: 720px 30%;
+    border-radius: 20px;
+    background-color: #262626;
+}
