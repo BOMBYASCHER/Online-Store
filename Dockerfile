@@ -4,6 +4,6 @@ COPY . .
 
 RUN gradle --no-daemon bootJar
 
-EXPOSE 4343
+EXPOSE 6446
 
 CMD java -jar build/libs/Online-Store-1.0.0-SNAPSHOT.jar
