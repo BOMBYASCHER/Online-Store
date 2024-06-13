@@ -1,12 +1,13 @@
-body {
-    background: #151515;
+@import '/src/main/resources/static/assets/style/range-slider.css';
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 body {
-    display: block;
-}  
+    background: #151515;
+}
 
 .block1 {
     position: fixed;
@@ -21,7 +22,7 @@ body {
     margin-left: 4%;
     margin-right: 4%;
     font-size: 40px;
-    padding-top: 10px;
+    padding-top: 50px;
     color: #ffffff;
     text-align: center;
     line-height: 0;
@@ -34,6 +35,7 @@ ul {
 }
 
 .btn {
+    margin-top: 20px;
     margin-left: 4%;
     margin-right: 4%;
     background-color: rgb(52, 152, 219);
@@ -98,10 +100,9 @@ ul {
 
 .block2 {
     position: absolute;
-    width: 0px;
-    height: 0px;
+    width: 21%;
+    height: 70%;
     margin: 13% 8%;
-    padding: 20% 10%;
     border-radius: 20px;
     background-color: #262626;
 }
@@ -111,49 +112,34 @@ ul {
     font-size: 40px;
     color: hsla(204, 70%, 53%);
     text-align: justify;
-    margin: 0% 90% 0% 0%;
+    padding-left: 20%;
+    padding-top: 2%;
 }
+
+.block2-box1{
+    background-color: #313131;
+    width: 90%;
+    height: 40%;
+    margin: 25% 8% 5% 5%;
+    border-radius: 20px;
+}
+
+.price {
+    position: absolute;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    padding-left: 32%;
+    padding-top: 0%;
+}
+
 
 .block3 {
     position: absolute;
     width: 64%;
     height: 8%;
     margin: 13% 30%;
+    padding: 3% 33%;
     border-radius: 20px;
     background-color: #262626;
-}
-* {box-sizing: border-box;}
-form {
-  width: auto;
-  float: right;
-  margin-right: 880px;
-  margin-top: 19px;
-}
-input {
-  width: 300px;
-  height: 42px;
-  padding-left: 15px;
-  border-radius: 42px;
-  border: 5px solid  rgb(52, 152, 219);
-  background: #f7f7f7;
-  outline: none;
-  position: relative;
-  transition: .3s linear;
-}
-input:focus {
-  width: 300px;
-}
-button {
-  width: 42px;
-  height: 42px;
-  background: none;
-  border: none;
-  position: absolute;
-  top: -20px;
-  right: 0;
-}
-button:before{
-  content: "\f002";
-  font-family: FontAwesome;
-  color: rgb(0, 0, 0);
 }
