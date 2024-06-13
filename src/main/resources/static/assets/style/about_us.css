@@ -1,0 +1,31 @@
+.about_us{
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    width: 90%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    min-height: 200px;
+    max-height: 1200px;
+    border-radius: 20px;
+    background-color: #262626;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #3498DB;
+    text-align:center;
+    font-size: calc(10px + 12 * (100vw / 1280));
+}
+
+p{
+    color: #fff;
+    padding: 20px;
+    font-size: calc(3px + 12 * (100vw / 1280));
+}
+
+h2{
+    color: #fff;
+    padding: 0px 20px;
+    font-size: calc(5px + 12 * (100vw / 1280));
+}
