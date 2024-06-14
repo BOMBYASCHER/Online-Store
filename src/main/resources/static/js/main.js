@@ -9,3 +9,4 @@ window.addEventListener("scroll", function () {
     headerEl.classList.remove("header_mini")
   }
 })
+
