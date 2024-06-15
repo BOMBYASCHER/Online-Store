@@ -19,8 +19,11 @@ img {
 
 body {
     font-family: Arial, Verdana, sans-serif;
+ 
     padding-top: 80px;
     background-color: #151515;
+
+
 }
 
 
@@ -39,7 +42,7 @@ body {
     transition: box-shadow .3s;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    background-color: #262626;
+    background-color: rgb(38, 38, 38);
 }
 
 .header__container {
@@ -77,3 +80,8 @@ body {
 }
 
 
+.backgraynds{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}

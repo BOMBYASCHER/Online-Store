@@ -19,19 +19,16 @@ h1{
 }
 
 p{
+    text-align:center;
     color: #fff;
     padding: 20px;
     font-size: calc(3px + 12 * (100vw / 1280));
 }
 
 h2{
+    text-align:center;
     color: #fff;
     padding: 0px 20px;
     font-size: calc(5px + 12 * (100vw / 1280));
 }
 
-.backgraynds{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
