@@ -1,5 +1,5 @@
  document.getElementById("myButton").addEventListener("click", function() {
-    fetch('https://example.com/data') // Вместо 'https://example.com/data' укажите URL вашего сервера
+    fetch('https://example.com/data')
      .then(response => {
             if (!response.ok) {
                  throw new Error('Ошибка при запросе: ' + response.status);
@@ -8,7 +8,6 @@
          })
                 .then(data => {
                     console.log('Ответ от сервера:', data);
-                    // Здесь можно обработать полученные данные
                 })
                 .catch(error => {
                     console.error('Ошибка:', error);
