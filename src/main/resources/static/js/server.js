@@ -8,7 +8,7 @@
          })
                 .then(data => {
                     console.log('Ответ от сервера:', data);
-                    // Здесь можно обработать полученные данные
+                  
                 })
                 .catch(error => {
                     console.error('Ошибка:', error);
