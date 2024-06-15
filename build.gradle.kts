@@ -23,6 +23,8 @@ dependencies {
     implementation("org.mapstruct:mapstruct:1.5.5.Final")
     implementation("org.openapitools:jackson-databind-nullable:0.2.6")
     implementation("net.datafaker:datafaker:2.0.1")
+    implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
     annotationProcessor("org.mapstruct:mapstruct-processor:1.5.5.Final")
     runtimeOnly("org.postgresql:postgresql")
     runtimeOnly("com.h2database:h2")
@@ -32,6 +34,7 @@ dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.security:spring-security-test")
 }
 
 tasks.jacocoTestReport {
