@@ -116,6 +116,7 @@
     padding: 10px;
     border: solid 1px #333;
     font-size: inherit;
+    border-radius: 20px
   }
   
   .form__btn {
