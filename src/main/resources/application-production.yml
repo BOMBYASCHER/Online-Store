@@ -3,3 +3,6 @@ spring:
     url: ${DATABASE_URL}
     username: ${JDBC_DATABASE_USERNAME}
     password: ${JDBC_DATABASE_PASSWORD}
+rsa:
+  private-key: file:/etc/secrets/private.pem
+  public-key: file:/etc/secrets/public.pem
