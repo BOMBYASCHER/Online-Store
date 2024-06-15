@@ -1,4 +1,4 @@
-package io.hexlet.controller;
+package io.hexlet.controller.api;
 
 import io.hexlet.model.Product;
 import org.junit.jupiter.api.Test;
