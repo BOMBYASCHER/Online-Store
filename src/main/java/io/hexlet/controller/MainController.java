@@ -13,13 +13,13 @@ public class MainController {
     }
 
     @GetMapping("catalog")
-    String index() {
-        return "index.html";
+    ModelAndView index() {
+        return new ModelAndView("index.html");
     }
 
     @GetMapping("cart")
-    String cart() {
-        return "cart.html";
+    ModelAndView cart() {
+        return new ModelAndView("cart.html");
     }
 
     @GetMapping("login")
@@ -28,7 +28,17 @@ public class MainController {
     }
 
     @GetMapping("registry")
-    String registry() {
-        return "registry.html";
+    ModelAndView registry() {
+        return new ModelAndView("registry.html");
+    }
+
+    @GetMapping("product")
+    ModelAndView product() {
+        return new ModelAndView("product.html");
+    }
+
+    @GetMapping("about")
+    ModelAndView about() {
+        return new ModelAndView("about_us.html");
     }
 }
