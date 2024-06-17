@@ -32,7 +32,7 @@ public class AuthenticationController {
 
     @PostMapping("/login")
     String login(@RequestBody AuthenticationDTO authenticationDTO) {
-        var email = authenticationDTO.getUsername();
+        var email = authenticationDTO.getEmail();
         var password = authenticationDTO.getPassword();
         var authentication = new UsernamePasswordAuthenticationToken(email, password);
         authenticationManager.authenticate(authentication);
