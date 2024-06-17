@@ -27,7 +27,7 @@ public class ProductControllerTest {
                 .andReturn()
                 .getResponse()
                 .getContentAsString();
-        assertThatJson(response).isArray();
+        assertThatJson(response).isArray().hasSize(100);
     }
 
     @Test
