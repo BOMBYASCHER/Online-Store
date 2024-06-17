@@ -34,6 +34,7 @@ public class SpringSecurity {
     SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity, HandlerMappingIntrospector introspector)
             throws Exception {
         return httpSecurity
+                .csrf(csrf -> csrf.disable())
                 .exceptionHandling(handler -> handler
                         .authenticationEntryPoint(new LoginUrlAuthenticationEntryPoint("/login")))
                 .authorizeHttpRequests(request -> request
@@ -52,10 +53,10 @@ public class SpringSecurity {
     }
 
     @Bean
-    AuthenticationProvider authenticationProvider() {
+    AuthenticationProvider daoAuthProvider(AuthenticationManagerBuilder auth) {
         var provider = new DaoAuthenticationProvider();
-        provider.setPasswordEncoder(passwordEncoder);
         provider.setUserDetailsService(userDetailsService);
+        provider.setPasswordEncoder(passwordEncoder);
         return provider;
     }
 }
