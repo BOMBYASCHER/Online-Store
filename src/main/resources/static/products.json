@@ -1,0 +1,702 @@
+[
+    {
+        "id": 1,
+        "name": "Canon PowerShot SX270 HS",
+        "price": 6656,
+        "rating": 2.6,
+        "image":"image/id1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Kodak EasyShare Touch M577",
+        "price": 237,
+        "rating": 2.2,
+        "image":"image/id2.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Nikon Coolpix S3700",
+        "price": 3101,
+        "rating": 3,
+        "image":"image/id3.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Panasonic Lumix DMC-GF8",
+        "price": 714,
+        "rating": 1.1,
+        "image":"image/id4.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Casio Exilim EX-H30",
+        "price": 6509,
+        "rating": 1.5,
+        "image":"image/id5.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Canon IXUS 285 HS",
+        "price": 16649,
+        "rating": 4.5,
+        "image":"image/id6.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Nikon D500",
+        "price": 13351,
+        "rating": 3.6,
+        "image":"image/id7.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Kodak EasyShare Max Z990",
+        "price": 3490,
+        "rating": 2.3,
+        "image":"image/id8.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Panasonic Lumix DMC-GX8",
+        "price": 6737,
+        "rating": 4.9,
+        "image":"image/id9.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Canon EOS 5DS",
+        "price": 10492,
+        "rating": 2,
+        "image":"image/id10.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Nikon Coolpix S2900",
+        "price": 9254,
+        "rating": 2,
+        "image":"image/id11.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Canon IXUS 145",
+        "price": 1610,
+        "rating": 3.8,
+        "image":"image/id12.jpg"
+      },
+      {
+        "id": 13,
+        "name": "Canon PowerShot N100",
+        "price": 2995,
+        "rating": 4.5,
+        "image":"image/id13.jpg"
+      },
+      {
+        "id": 14,
+        "name": "Canon PowerShot N100",
+        "price": 12293,
+        "rating": 1.7,
+        "image":"image/id14.jpg"
+      },
+      {
+        "id": 15,
+        "name": "Samsung NX3000",
+        "price": 14116,
+        "rating": 4.9,
+        "image":"image/id15.jpg"
+      },
+      {
+        "id": 16,
+        "name": "Pentax 645Z",
+        "price": 8662,
+        "rating": 3.8,
+        "image":"image/id16.jpg"
+      },
+      {
+        "id": 17,
+        "name": "Canon PowerShot S200",
+        "price": 17044,
+        "rating": 4.5,
+        "image":"image/id17.jpg"
+      },
+      {
+        "id": 18,
+        "name": "Nikon DL18-50",
+        "price": 13247,
+        "rating": 2.8,
+        "image":"image/id18.jpg"
+      },
+      {
+        "id": 19,
+        "name": "Ricoh CX3",
+        "price": 4273,
+        "rating": 3.5,
+        "image":"image/id19.jpg"
+      },
+      {
+        "id": 20,
+        "name": "Panasonic Lumix DMC-ZS60",
+        "price": 13556,
+        "rating": 2.9,
+        "image":"image/id20.jpg"
+      },
+      {
+        "id": 21,
+        "name": "Nikon D3100",
+        "price": 883,
+        "rating": 2.2,
+        "image":"image/id21.jpg"
+      },
+      {
+        "id": 22,
+        "name": "Canon PowerShot SX520 HS",
+        "price": 3814,
+        "rating": 3.3,
+        "image":"image/id22.jpg"
+      },
+      {
+        "id": 23,
+        "name": "Panasonic Lumix DMC-G7",
+        "price": 157,
+        "rating": 4.8,
+        "image":"image/id23.jpg"
+      },
+      {
+        "id": 24,
+        "name": "Kodak EasyShare Sport C135",
+        "price": 5768,
+        "rating": 3.6,
+        "image":"image/id24.jpg"
+      },
+      {
+        "id": 25,
+        "name": "Canon EOS 7D Mark II",
+        "price": 5289,
+        "rating": 4.3,
+        "image":"image/id25.jpg"
+      },
+      {
+        "id": 26,
+        "name": "Samsung NX30",
+        "price": 17534,
+        "rating": 1.3,
+        "image":"image/id26.jpg"
+      },
+      {
+        "id": 27,
+        "name": "Panasonic Lumix DMC-TS6",
+        "price": 3493,
+        "rating": 1.7,
+        "image":"image/id27.jpg"
+      },
+      {
+        "id": 28,
+        "name": "Kodak Pixpro Astro Zoom AZ651",
+        "price": 3127,
+        "rating": 4.3,
+        "image":"image/id28.jpg"
+      },
+      {
+        "id": 29,
+        "name": "Canon PowerShot G7 X",
+        "price": 16912,
+        "rating": 1.9,
+        "image":"image/id29.jpg"
+      },
+      {
+        "id": 30,
+        "name": "Nikon Coolpix P600",
+        "price": 15808,
+        "rating": 1.2,
+        "image":"image/id30.jpg"
+      },
+      {
+        "id": 31,
+        "name": "Pentax K-3",
+        "price": 18268,
+        "rating": 1.2,
+        "image":"image/id31.jpg"
+      },
+      {
+        "id": 32,
+        "name": "Canon EOS 5DS",
+        "price": 6807,
+        "rating": 3.7,
+        "image":"image/id32.jpg"
+      },
+      {
+        "id": 33,
+        "name": "Canon PowerShot SX720 HS",
+        "price": 13311,
+        "rating": 1.1,
+        "image":"image/id33.jpg"
+      },
+      {
+        "id": 34,
+        "name": "Canon PowerShot SX620 HS",
+        "price": 18997,
+        "rating": 1.5,
+        "image":"image/id34.jpg"
+      },
+      {
+        "id": 35,
+        "name": "Sony Alpha 77 II",
+        "price": 5698,
+        "rating": 1.8,
+        "image":"image/id35.jpg"
+      },
+      {
+        "id": 36,
+        "name": "Fujifilm FinePix XP90",
+        "price": 4867,
+        "rating": 5,
+        "image":"image/id36.jpg"
+      },
+      {
+        "id": 37,
+        "name": "Canon PowerShot G7 X Mark II",
+        "price": 5070,
+        "rating": 2.7,
+        "image":"image/id37.jpg"
+      },
+      {
+        "id": 38,
+        "name": "Pentax K-S2",
+        "price": 11434,
+        "rating": 4.3,
+        "image":"image/id38.jpg"
+      },
+      {
+        "id": 39,
+        "name": "Samsung NX Mini",
+        "price": 14119,
+        "rating": 3.3,
+        "image":"image/id39.jpg"
+      },
+      {
+        "id": 40,
+        "name": "Nikon Coolpix S6800",
+        "price": 1657,
+        "rating": 3.8,
+        "image":"image/id40.jpg"
+      },
+      {
+        "id": 41,
+        "title": "Nikon D3300",
+        "price": 9309,
+        "rating": 2.8,
+        "image":"image/id41.jpg"
+      },
+      {
+        "id": 42,
+        "name": "Kodak EasyShare Z5120",
+        "price": 508,
+        "rating": 3.1,
+        "image":"image/id42.jpg"
+      },
+      {
+        "id": 43,
+        "name": "Canon IXUS 150",
+        "price": 12765,
+        "rating": 4.9,
+        "image":"image/id43.jpg"
+      },
+      {
+        "id": 44,
+        "name": "Kodak EasyShare M590",
+        "price": 3327,
+        "rating": 1.2,
+        "image":"image/id44.jpg"
+      },
+      {
+        "id": 45,
+        "name": "Panasonic Lumix DMC-ZS60",
+        "price": 16791,
+        "rating": 3.1,
+        "image":"image/id45.jpg"
+      },
+      {
+        "id": 46,
+        "name": "Fujifilm FinePix S1",
+        "price": 5340,
+        "rating": 1,
+        "image":"image/id46.jpg"
+      },
+      {
+        "id": 47,
+        "name": "Leica Q",
+        "price": 6517,
+        "rating": 1.2,
+        "image":"image/id47.jpg"
+      },
+      {
+        "id": 48,
+        "name": "Canon EOS M5",
+        "price": 7812,
+        "rating": 2.3,
+        "image":"image/id48.jpg"
+      },
+      {
+        "id": 49,
+        "name": "Fujifilm X-T1",
+        "price": 10252,
+        "rating": 2.7,
+        "image":"image/id49.jpg"
+      },
+      {
+        "id": 50,
+        "name": "Samsung WB35F",
+        "price": 14148,
+        "rating": 2.7,
+        "image":"image/id50.jpg"
+      },
+      {
+        "id": 51,
+        "name": "Kodak EasyShare Max Z990",
+        "price": 13716,
+        "rating": 2.7,
+        "image":"image/id51.jpg"
+      },
+      {
+        "id": 52,
+        "name": "Nikon Coolpix S32",
+        "price": 1056,
+        "rating": 1.6,
+        "image":"image/id52.jpg"
+      },
+      {
+        "id": 53,
+        "name": "Sony Cyber-shot DSC-HX350",
+        "price": 8923,
+        "rating": 2.8,
+        "image":"image/id53.jpg"
+      },
+      {
+        "id": 54,
+        "name": "Nikon Coolpix S33",
+        "price": 262,
+        "rating": 4.4,
+        "image":"image/id54.jpg"
+      },
+      {
+        "id": 55,
+        "name": "Nikon Coolpix L830",
+        "price": 6478,
+        "rating": 4.3,
+        "image":"image/id55.jpg"
+      },
+      {
+        "id": 56,
+        "name": "Canon PowerShot SX720 HS",
+        "price": 9260,
+        "rating": 3.4,
+        "image":"image/id56.jpg"
+      },
+      {
+        "id": 57,
+        "name": "Pentax WG-3",
+        "price": 14813,
+        "rating": 4.4,
+        "image":"image/id57.jpg"
+      },
+      {
+        "id": 58,
+        "name": "Canon IXUS 275 HS",
+        "price": 15440,
+        "rating": 1.5,
+        "image":"image/id58.jpg"
+      },
+      {
+        "id": 59,
+        "name": "Pentax K-3",
+        "price": 6650,
+        "rating": 2.9,
+        "image":"image/id59.jpg"
+      },
+      {
+        "id": 60,
+        "name": "Panasonic Lumix FZ2500",
+        "price": 2350,
+        "rating": 3,
+        "image":"image/id60.jpg"
+      },
+      {
+        "id": 61,
+        "name": "Kodak EasyShare Mini M200",
+        "price": 11400,
+        "rating": 3.8,
+        "image":"image/id61.jpg"
+      },
+      {
+        "id": 62,
+        "name": "Sony Alpha 7R II",
+        "price": 11175,
+        "rating": 1.6,
+        "image":"image/id62.jpg"
+      },
+      {
+        "id": 63,
+        "name": "Canon 450D",
+        "price": 17045,
+        "rating": 1.7,
+        "image":"image/id63.jpg"
+      },
+      {
+        "id": 64,
+        "name": "Canon PowerShot SX280 HS",
+        "price": 4002,
+        "rating": 2.9,
+        "image":"image/id64.jpg"
+      },
+      {
+        "id": 65,
+        "name": "Pentax K-50",
+        "price": 5372,
+        "rating": 2,
+        "image":"image/id65.jpg"
+      },
+      {
+        "id": 66,
+        "name": "Nikon Coolpix L830",
+        "price": 4197,
+        "rating": 3.4,
+        "image":"image/id66.jpg"
+      },
+      {
+        "id": 67,
+        "name": "Nikon D500",
+        "price": 4320,
+        "rating": 2.9,
+        "image":"image/id67.jpg"
+      },
+      {
+        "id": 68,
+        "name": "Casio Exilim EX-ZR300",
+        "price": 19777,
+        "rating": 3,
+        "image":"image/id68.jpg"
+      },
+      {
+        "id": 69,
+        "name": "Nikon D4S",
+        "price": 6427,
+        "rating": 3.4,
+        "image":"image/id69.jpg"
+      },
+      {
+        "id": 70,
+        "name": "Kodak EasyShare Z981",
+        "price": 9739,
+        "rating": 5,
+        "image":"image/id70.jpg"
+      },
+      {
+        "id": 71,
+        "name": "Nikon Coolpix P900",
+        "price": 12610,
+        "rating": 3.8,
+        "image":"image/id71.jpg"
+      },
+      {
+        "id": 72,
+        "name": "POLAROID IS2132",
+        "price": 3796,
+        "rating": 3.6,
+        "image":"image/id72.jpg"
+      },
+      {
+        "id": 73,
+        "name": "Canon EOS 5DS",
+        "price": 7748,
+        "rating": 1.9,
+        "image":"image/id73.jpg"
+      },
+      {
+        "id": 74,
+        "name": "Panasonic Lumix DMC-GH4",
+        "price": 9828,
+        "rating": 3.7,
+        "image":"image/id74.jpg"
+      },
+      {
+        "id": 75,
+        "name": "Fujifilm X-E2",
+        "price": 5168,
+        "rating": 3.8,
+        "image":"image/id75.jpg"
+      },
+      {
+        "id": 76,
+        "name": "Samsung NX3000",
+        "price": 12404,
+        "rating": 2.7,
+        "image":"image/id76.jpg"
+      },
+      {
+        "id": 77,
+        "name": "Panasonic Lumix DMC-G7",
+        "price": 10241,
+        "rating": 3.4,
+        "image":"image/id77.jpg"
+      },
+      {
+        "id": 78,
+        "name": "Kodak EasyShare Sport C123",
+        "price": 6990,
+        "rating": 2.5,
+        "image":"image/id78.jpg"
+      },
+      {
+        "id": 79,
+        "name": "Leica TL",
+        "price": 1951,
+        "rating": 1.3,
+        "image":"image/id79.jpg"
+      },
+      {
+        "id": 80,
+        "name": "Nikon Coolpix L31",
+        "price": 6681,
+        "rating": 2.8,
+        "image":"image/id80.jpg"
+      },
+      {
+        "id": 81,
+        "name": "Ricoh PX",
+        "price": 196,
+        "rating": 1.6,
+        "image":"image/id81.jpg"
+      },
+      {
+        "id": 82,
+        "name": "Ricoh CX6",
+        "price": 17980,
+        "rating": 2.4,
+        "image":"image/id82.jpg"
+      },
+      {
+        "id": 83,
+        "name": "Pentax K-5 IIs",
+        "price": 12004,
+        "rating": 3.8,
+        "image":"image/id83.jpg"
+      },
+      {
+        "id": 84,
+        "name": "Pentax Efina",
+        "price": 1048,
+        "rating": 1,
+        "image":"image/id84.jpg"
+      },
+      {
+        "id": 85,
+        "name": "Panasonic Lumix DMC-FZ1000",
+        "price": 2963,
+        "rating": 2.5,
+        "image":"image/id85.jpg"
+      },
+      {
+        "id": 86,
+        "name": "Nikon D3200",
+        "price": 14872,
+        "rating": 2.1,
+        "image":"image/id86.jpg"
+      },
+      {
+        "id": 87,
+        "name": "Leica Q",
+        "price": 14815,
+        "rating": 2.8,
+        "image":"image/id87.jpg"
+      },
+      {
+        "id": 88,
+        "name": "Nikon D5500",
+        "price": 4248,
+        "rating": 3.2,
+        "image":"image/id88.jpg"
+      },
+      {
+        "id": 89,
+        "name": "Nikon Coolpix S6800",
+        "price": 9516,
+        "rating": 2.1,
+        "image":"image/id89.jpg"
+      },
+      {
+        "id": 90,
+        "name": "Leica T",
+        "price": 7604,
+        "rating": 4.3,
+        "image":"image/id90.jpg"
+      },
+      {
+        "id": 91,
+        "name": "Nikon Coolpix W100",
+        "price": 7488,
+        "rating": 1.1,
+        "image":"image/id91.jpg"
+      },
+      {
+        "id": 92,
+        "name": "Leica V-Lux",
+        "price": 12863,
+        "rating": 2.5,
+        "image":"image/id92.jpg"
+      },
+      {
+        "id": 93,
+        "name": "Fujifilm X-A2",
+        "price": 7338,
+        "rating": 1.5,
+        "image":"image/id93.jpg"
+      },
+      {
+        "id": 94,
+        "name": "Sigma sd Quattro H",
+        "price": 3106,
+        "rating": 1.1,
+        "image":"image/id94.jpg"
+      },
+      {
+        "id": 95,
+        "name": "POLAROID IS2132",
+        "price": 5621,
+        "rating": 3.7,
+        "image":"image/id95.jpg"
+      },
+      {
+        "id": 96,
+        "name": "Nikon Coolpix L830",
+        "price": 908,
+        "rating": 1.4,
+        "image":"image/id96.jpg"
+      },
+      {
+        "id": 97,
+        "name": "Panasonic Lumix DMC-FZ300",
+        "price": 17608,
+        "rating": 2.4,
+        "image":"image/id97.jpg"
+      },
+      {
+        "id": 98,
+        "name": "Panasonic Lumix DMC-LX100",
+        "price": 15560,
+        "rating": 3.2,
+        "image":"image/id98.jpg"
+      },
+      {
+        "id": 99,
+        "name": "Fujifilm X-A10",
+        "price": 14904,
+        "rating": 3.2,
+        "image":"image/id99.jpg"
+      },
+      {
+        "id": 100,
+        "name": "Canon PowerShot S120",
+        "price": 2904,
+        "rating": 1.1,
+        "image":"image/id100.jpg"
+      }
+]

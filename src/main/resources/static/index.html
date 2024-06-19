@@ -6,88 +6,51 @@
     <title>CATALOG</title>
     <link rel="stylesheet" href="assets/style/normalyze.css">
     <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="assets/style/cardstovar.css">
-    <script src="labe/jquery-3.7.1.slim.min.js" defer></script>
-    <script src="labe/jquery-3.7.1.min.js" defer></script>
-    <script src="./js/index.js" type="module" defer></script>
 </head>
 <body>
-    <script src="labe/three.min.js"></script>
-    <script src="labe/vanta.waves.min.js"></script>
-    <script src="labe/backgraynd.js"></script>
-    <header id="header" class="header">
-        <div class="container header__container">
-            <a class="logo">MACONI<a>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="/about">ABOUT US</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/catalog">CATALOG</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">BASKET</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/login">LOGIN</a>
-                    </li>
-                </ul>
-            </nav>
+  <div id="backgraynds" class="backgraynds">
+    <div class="container">
+        <header id="header" class="header">
+                <div class="container header__container">
+                    <a class="logo">MACONI<a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="/about">ABOUT US</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="/catalog">CATALOG</a>
+                            </li>
+                            <li class="menu__item">
+                              <a class="menu__link" href="/login">LOGIN</a>
+                          </li>
+                            <li class="menu__item">
+                                <div class="icon-cart">
+                                <a class="menu__link" >CARDS</a>
+                            </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>|
+        <div class="listProduct">
+
         </div>
-    </header>|
-    <div class="wrapper">  
-        <div class="card" >
-          <img src="4" alt="" id="4">
-          <div class="content">
-            <div class="row">
-              <div class="details">
-                <span id="4"></span>
-                <p id="4"></p>
-              </div>
-              <div class="price" id="4"></div>
-            </div>
-            <div class="buttons">
-              <button>Купить в 1 клик</button>
-              <button class="cart-btn">В корзину</button>
-            </div>
-          </div>
+    </div>
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            
         </div>
-        
-        <div class="card">
-          <img src="3" alt="" id="3">
-          <div class="content">
-            <div class="row">
-              <div class="details">
-                <span id="3"></span>
-                <p id="3"></p>
-              </div>
-              <div class="price" id="3"></div>
-            </div>
-            <div class="buttons">
-              <button>Купить в 1 клик</button>
-              <button class="cart-btn">В корзину</button>
-            </div>
-          </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">Check Out</button>
         </div>
-        
-        <div class="card">
-          <img src= "1" alt="" id="1">
-          <div class="content">
-            <div class="row">
-              <div class="details">
-                <span></span>
-                <p id="1"></p>
-              </div>
-              <div class="price" id="1"></div>
-            </div>
-            <div class="buttons">
-              <button>Купить в 1 клик</button>
-              <button class="cart-btn">В корзину</button>
-            </div>
-          </div>
-        </div>
-        
-      </div>
+    </div>
+</div>
+<script src="labe/three.min.js"></script>
+<script src="labe/vanta.waves.min.js"></script>
+<script src="labe/backgraynd.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
