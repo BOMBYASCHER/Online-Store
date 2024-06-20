@@ -24,7 +24,7 @@ closeCart.addEventListener('click', () => {
                 newProduct.classList.add('item');
                 newProduct.innerHTML = 
                 `<img src="${product.image}" alt="">
-                <h2>${product.name}</h2>
+                <h2>${product.title}</h2>
                 <div class="price">₽${product.price}</div>
                 <button class="addCart">Add To Cart</button>`;
                 listProductHTML.appendChild(newProduct);
@@ -77,7 +77,7 @@ const addCartToHTML = () => {
                     <img src="${info.image}">
                 </div>
                 <div class="name">
-                ${info.name}
+                ${info.title}
                 </div>
                 <div class="totalPrice">₽${info.price * item.quantity}</div>
                 <div class="quantity">
@@ -126,7 +126,7 @@ const changeQuantityCart = (product_id, type) => {
 }
 
 const initApp = () => {
-    fetch('products.json')
+    fetch('api/products')
     .then(response => response.json())
     .then(data => {
         products = data;
