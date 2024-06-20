@@ -32,7 +32,7 @@ public class DataInitializer implements ApplicationRunner {
             var product = new Product();
             var brandWithModel = faker.camera().brandWithModel();
             product.setTitle(brandWithModel);
-            product.setPrice(faker.number().numberBetween(100L, 20000L));
+            product.setPrice(faker.number().numberBetween(25L, 2000L) * 10);
             product.setRating(faker.number().randomDouble(1, 1, 5));
             product.setCategory(camerasCategory);
             product.setAvailability(faker.number().numberBetween(1, 10) != 1);
