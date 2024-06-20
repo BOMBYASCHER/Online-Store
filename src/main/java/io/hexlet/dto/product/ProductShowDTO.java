@@ -13,4 +13,5 @@ public class ProductShowDTO {
     private Double rating;
     private boolean availability;
     private String category;
+    private String image;
 }

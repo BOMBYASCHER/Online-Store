@@ -11,4 +11,5 @@ public class ProductDTO {
     private Long price;
     private Double rating;
     private boolean availability;
+    private String image;
 }

@@ -30,12 +30,14 @@ public class DataInitializer implements ApplicationRunner {
         categoryRepository.save(camerasCategory);
         for (int i = 0; i < 100; i++) {
             var product = new Product();
-            product.setTitle(faker.camera().brandWithModel());
+            var brandWithModel = faker.camera().brandWithModel();
+            product.setTitle(brandWithModel);
             product.setPrice(faker.number().numberBetween(100L, 20000L));
             product.setRating(faker.number().randomDouble(1, 1, 5));
             product.setCategory(camerasCategory);
             product.setAvailability(faker.number().numberBetween(1, 10) != 1);
             product.setDescription(faker.lorem().paragraph(6));
+            product.setImage("image/" + brandWithModel + ".jpg");
             productRepository.save(product);
         }
     }
