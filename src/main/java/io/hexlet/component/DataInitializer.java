@@ -22,24 +22,18 @@ public class DataInitializer implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) {
+        productRepository.deleteAll();
+        categoryRepository.deleteAll();
         var faker = new Faker(Locale.ENGLISH);
-        var title = "cameras";
-        Category smartphonesCategory;
-        var optionalCategory = categoryRepository.findByTitle(title);
-        if (optionalCategory.isPresent()) {
-            smartphonesCategory = optionalCategory.get();
-        } else {
-            var category = new Category();
-            category.setTitle(title);
-            smartphonesCategory = category;
-            categoryRepository.save(smartphonesCategory);
-        }
+        var camerasCategory = new Category();
+        camerasCategory.setTitle("cameras");
+        categoryRepository.save(camerasCategory);
         for (int i = 0; i < 100; i++) {
             var product = new Product();
             product.setTitle(faker.camera().brandWithModel());
             product.setPrice(faker.number().numberBetween(100L, 20000L));
             product.setRating(faker.number().randomDouble(1, 1, 5));
-            product.setCategory(smartphonesCategory);
+            product.setCategory(camerasCategory);
             product.setAvailability(faker.number().numberBetween(1, 10) != 1);
             product.setDescription(faker.lorem().paragraph(6));
             productRepository.save(product);

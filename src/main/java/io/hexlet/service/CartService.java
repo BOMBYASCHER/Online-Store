@@ -1,7 +1,7 @@
 package io.hexlet.service;
 
-import io.hexlet.exception.ResourceNotFoundException;
-import io.hexlet.model.Product;
+import io.hexlet.dto.product.ProductDTO;
+import io.hexlet.mapper.ProductMapper;
 import io.hexlet.repository.ProductRepository;
 import io.hexlet.repository.UserRepository;
 import io.hexlet.util.UserUtil;
@@ -19,26 +19,34 @@ public class CartService {
     private ProductRepository productRepository;
 
     @Autowired
+    private ProductMapper productMapper;
+
+    @Autowired
     private UserUtil userUtil;
 
-    public List<Product> getAllProductsInCart() {
+    public List<ProductDTO> getAllProductsInCart() {
         var user = userUtil.getCurrentUser();
-        return productRepository.findAllById(user.getCart());
+        return productRepository.findAllById(user.getCart())
+                .stream()
+                .map(productMapper::map)
+                .toList();
     }
 
-    public List<Product> addProductInCart(Long productId)
-            throws ResourceNotFoundException {
+    public List<ProductDTO> addProductInCart(Long productId) {
         var user = userUtil.getCurrentUser();
-        var product = productRepository.findById(productId)
-                .orElseThrow(() -> new ResourceNotFoundException("Product with id " + productId + " not found."));
-        user.getCart().add(product.getId());
-        userRepository.save(user);
-        return productRepository.findAllById(user.getCart());
+        if (productRepository.existsById(productId)) {
+            user.addToCart(productId);
+            userRepository.save(user);
+        }
+        return productRepository.findAllById(user.getCart())
+                .stream()
+                .map(productMapper::map)
+                .toList();
     }
 
     public void deleteProductFromCart(Long productId) {
         var user = userUtil.getCurrentUser();
-        user.getCart().removeIf(product -> product.equals(productId));
+        user.removeFromCart(productId);
         userRepository.save(user);
     }
 }

@@ -20,6 +20,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrlPattern;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -71,7 +72,6 @@ public class AuthenticationControllerTest {
                 .andReturn()
                 .getResponse()
                 .getContentAsString();
-        System.out.println(response);
         assertThat(response).isNotEmpty();
     }
 
@@ -87,6 +87,7 @@ public class AuthenticationControllerTest {
                 .content(om.writeValueAsString(credentials));
         var response = mockMvc.perform(request)
                 .andExpect(status().is3xxRedirection())
+                .andExpect(redirectedUrlPattern("**/login"))
                 .andReturn()
                 .getResponse()
                 .getContentAsString();

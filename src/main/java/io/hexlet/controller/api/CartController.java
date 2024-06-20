@@ -1,7 +1,6 @@
 package io.hexlet.controller.api;
 
-import io.hexlet.exception.ResourceNotFoundException;
-import io.hexlet.model.Product;
+import io.hexlet.dto.product.ProductDTO;
 import io.hexlet.service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,13 +21,12 @@ public class CartController {
     private CartService cartService;
 
     @GetMapping
-    List<Product> index() {
+    List<ProductDTO> index() {
         return cartService.getAllProductsInCart();
     }
 
     @PutMapping
-    List<Product> update(@RequestBody Long productId)
-            throws ResourceNotFoundException {
+    List<ProductDTO> update(@RequestBody Long productId) {
         return cartService.addProductInCart(productId);
     }
 

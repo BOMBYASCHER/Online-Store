@@ -191,3 +191,6 @@ body.showCart .cartTab{
 ::-webkit-scrollbar {
     width: 0;
   }
+img {
+    border-radius: 20px;
+}

@@ -15,10 +15,9 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @EntityListeners(AuditingEntityListener.class)
@@ -43,7 +42,15 @@ public class User implements BaseEntity, UserDetails {
     @NotBlank
     private String lastName;
 
-    private Set<Long> cart = new HashSet<>();
+    private ArrayList<Long> cart = new ArrayList<>();
+
+    public void addToCart(Long productId) {
+        cart.add(productId);
+    }
+
+    public void removeFromCart(Long productId) {
+        cart.remove(productId);
+    }
 
     @Override
     public String getUsername() {

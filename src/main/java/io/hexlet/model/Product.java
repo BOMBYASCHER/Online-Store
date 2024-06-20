@@ -37,4 +37,6 @@ public class Product implements BaseEntity {
 
     @ManyToOne
     private Category category;
+
+    private String image;
 }
