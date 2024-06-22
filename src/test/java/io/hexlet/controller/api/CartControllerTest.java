@@ -28,6 +28,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrlPattern;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
 
@@ -87,6 +88,15 @@ public class CartControllerTest {
     }
 
     @Test
+    void testIndexNotAuthenticated() throws Exception {
+        var request = get("/api/cart");
+        mockMvc.perform(request)
+                .andExpect(status().is3xxRedirection())
+                .andExpect(redirectedUrlPattern("**/login"));
+    }
+
+
+    @Test
     void testIndexNotEmptyCart() throws Exception {
         Set<Long> products = new HashSet<>(List.of(1L, 2L, 3L));
         testUser.getCart().addAll(products);
@@ -117,6 +127,16 @@ public class CartControllerTest {
         assertThat(user.getCart()).hasSize(1);
         assertThatJson(response).isArray().hasSize(1);
         assertThatJson(response).isArray().contains(product);
+    }
+
+    @Test
+    void testAddProductInCartNotAuthenticated() throws Exception {
+        var request = put("/api/cart")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(om.writeValueAsString(1));
+        mockMvc.perform(request)
+                .andExpect(status().is3xxRedirection())
+                .andExpect(redirectedUrlPattern("**/login"));
     }
 
     @Test

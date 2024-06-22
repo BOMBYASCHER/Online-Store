@@ -2,12 +2,15 @@ package io.hexlet.component;
 
 import io.hexlet.model.Category;
 import io.hexlet.model.Product;
+import io.hexlet.model.User;
 import io.hexlet.repository.CategoryRepository;
 import io.hexlet.repository.ProductRepository;
+import io.hexlet.repository.UserRepository;
 import net.datafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.util.Locale;
@@ -20,8 +23,20 @@ public class DataInitializer implements ApplicationRunner {
     @Autowired
     private CategoryRepository categoryRepository;
 
+    @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
     @Override
     public void run(ApplicationArguments args) {
+        var user = new User();
+        user.setEmail("admin@pro.io");
+        user.setPassword(passwordEncoder.encode("password"));
+        user.setFirstName("DJ");
+        user.setLastName("Feel");
+        userRepository.save(user);
         productRepository.deleteAll();
         categoryRepository.deleteAll();
         var faker = new Faker(Locale.ENGLISH);

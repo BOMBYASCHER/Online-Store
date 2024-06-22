@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="assets/style/normalyze.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/login.css">
-    <script src="labe/login.js" defer></script>
+    <script src="labe/sign-in.js" defer></script>
+    <script src="labe/sign-up.js" defer></script>
 </head>
 <body>
     <div id="backgraynds" class="backgraynds"></div>
@@ -32,51 +33,54 @@
     </div>
     <article class="border">
         <div class="block">
-          <section class="block__item block-item">
-            <h2 class="block-item__title">У вас уже есть аккаунт?</h2>
-            <button class="block-item__btn signin-btn">Войти</button>
-          </section>
-          <section class="block__item block-item">
-            <h2 class="block-item__title">У вас нет аккаунта?</h2>
-            <button class="block-item__btn signup-btn">Зарегистрироваться</button>
-          </section>
+            <section class="block__item block-item">
+                <h2 class="block-item__title">Already have an account?</h2>
+                <button class="block-item__btn signin-btn">Sign in</button>
+            </section>
+            <section class="block__item block-item">
+                <h2 class="block-item__title">Don't have an account?</h2>
+                <button class="block-item__btn signup-btn">Sign up</button>
+            </section>
         </div>
         <div class="form-box">
-          <form action="#" class="form form_signin">
-            <h3 class="form__title">Вход</h3>
-            <p>
-              <input type="text" class="form__input" id="email" placeholder="login">
-            </p>
-            <p>
-              <input type="password" class="form__input" id="password" placeholder="password">
-            </p>
-            <p>
-              <button class="form__btn" id="vxod">Войти</button>
-            </p>
-          </form>
-          <form action="#" class="form form_signup">
-            <h3 class="form__title">Регистрация</h3>
-            <p>
-              <input type="text" class="form__input" id="login" placeholder="login">
-            </p>
-            <p>
-              <input type="email" class="form__input" id="Email" placeholder="Email">
-            </p>
-            <p>
-              <input type="password" class="form__input" id="password" placeholder="password">
-            </p>
-            <p>
-              <input type="password" class="form__input" id="conpassword" placeholder="confirmation password">
-            </p>
-            <p>
-              <button class="form__btn form__btn_signup" id="reg">Зарегистрироваться</button>
-            </p>
-          </form>
+            <form id="sign-in-form" class="form form_signin">
+                <h3 class="form__title">Sign in</h3>
+                <p>
+                    <input name="email" type="email" class="form__input" id="login-email" placeholder="Email" value="" required>
+                </p>
+                <p>
+                    <input name="password" type="password" class="form__input" id="login-password" placeholder="Password" value="" required>
+                </p>
+                <p>
+                  <button type="submit" class="form__btn" id="login">Login</button>
+                </p>
+            </form>
+            <form id="sign-up-form" class="form form_signup">
+            <h3 class="form__title">Sign up</h3>
+                <p>
+                  <input name="email" type="email" class="form__input" id="registry-email" placeholder="Email">
+                </p>
+                <p>
+                  <input name="firstName" type="text" class="form__input" id="registry-firstname" placeholder="First name">
+                </p>
+                <p>
+                   <input name="lastName" type="text" class="form__input" id="registry-lastname" placeholder="Last name">
+                </p>
+                <p>
+                  <input name="password" type="password" class="form__input" id="registry-password" placeholder="Password">
+                </p>
+                <p>
+                  <input name="confirmPassword" type="password" class="form__input" id="registry-confirm-password" placeholder="Confirmation password">
+                </p>
+                <p>
+                  <button type="submit" class="form__btn form__btn_signup" id="registry">Register</button>
+                </p>
+            </form>
         </div>
-      </article>
-      <script src="labe/three.min.js"></script>
-      <script src="labe/vanta.waves.min.js"></script>
-      <script src="labe/backgraynd.js"></script>
+    </article>
+    <script src="labe/three.min.js"></script>
+    <script src="labe/vanta.waves.min.js"></script>
+    <script src="labe/backgraynd.js"></script>
     </div>
 </body>
 </html>
