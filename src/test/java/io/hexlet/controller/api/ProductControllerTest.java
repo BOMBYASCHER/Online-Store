@@ -1,6 +1,6 @@
 package io.hexlet.controller.api;
 
-import io.hexlet.model.Product;
+import io.hexlet.controller.config.PostgreSQLContainerConfig;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -11,13 +11,11 @@ import static net.javacrumbs.jsonunit.assertj.JsonAssertions.assertThatJson;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest
+@SpringBootTest(classes = PostgreSQLContainerConfig.class)
 @AutoConfigureMockMvc
 public class ProductControllerTest {
     @Autowired
     private MockMvc mockMvc;
-
-    private Product product;
 
     @Test
     void testIndex() throws Exception {

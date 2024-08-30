@@ -1,13 +1,12 @@
 package io.hexlet.controller.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.hexlet.controller.config.PostgreSQLContainerConfig;
 import io.hexlet.controller.util.ModelGenerator;
 import io.hexlet.dto.AuthenticationDTO;
 import io.hexlet.dto.RegistrationDTO;
-import io.hexlet.mapper.UserMapper;
 import io.hexlet.model.User;
 import io.hexlet.repository.UserRepository;
-import io.hexlet.service.AuthenticationService;
 import org.instancio.Instancio;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -23,20 +22,14 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrlPattern;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest
+@SpringBootTest(classes = PostgreSQLContainerConfig.class)
 @AutoConfigureMockMvc
 public class AuthenticationControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
     @Autowired
-    private AuthenticationService authenticationService;
-
-    @Autowired
     private UserRepository userRepository;
-
-    @Autowired
-    private UserMapper userMapper;
 
     @Autowired
     private ModelGenerator modelGenerator;

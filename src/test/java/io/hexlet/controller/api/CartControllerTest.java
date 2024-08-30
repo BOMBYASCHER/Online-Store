@@ -1,6 +1,7 @@
 package io.hexlet.controller.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.hexlet.controller.config.PostgreSQLContainerConfig;
 import io.hexlet.controller.util.ModelGenerator;
 import io.hexlet.dto.AuthenticationDTO;
 import io.hexlet.mapper.ProductMapper;
@@ -32,7 +33,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
 
-@SpringBootTest
+@SpringBootTest(classes = PostgreSQLContainerConfig.class)
 @AutoConfigureMockMvc
 public class CartControllerTest {
     @Autowired

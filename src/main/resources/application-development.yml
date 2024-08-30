@@ -1,6 +1,3 @@
-spring:
-  datasource:
-    url: jdbc:h2:mem:test
 rsa:
   private-key: classpath:certs/private-development-only.pem
   public-key: classpath:certs/public-development-only.pem
