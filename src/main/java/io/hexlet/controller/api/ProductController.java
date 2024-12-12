@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/api/products")
@@ -20,7 +20,7 @@ public class ProductController {
     private ProductService productService;
 
     @GetMapping
-    ResponseEntity<List<ProductDTO>> index() {
+    ResponseEntity<Flux<ProductDTO>> index() {
         var products = productService.getAllProducts();
         return ResponseEntity.ok()
                 .header("X-Total-Count", String.valueOf(products.size()))
@@ -28,7 +28,7 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    ProductShowDTO show(@PathVariable Long id) throws ResourceNotFoundException {
+    Mono<ProductShowDTO> show(@PathVariable Long id) throws ResourceNotFoundException {
         return productService.getProduct(id);
     }
 }

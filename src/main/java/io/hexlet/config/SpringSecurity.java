@@ -9,17 +9,19 @@ import org.springframework.security.authentication.dao.DaoAuthenticationProvider
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.config.web.server.ServerHttpSecurity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint;
+import org.springframework.security.web.server.SecurityWebFilterChain;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 
 @Component
-@EnableWebSecurity
+@EnableWebFluxSecurity
 public class SpringSecurity {
     @Autowired
     private PasswordEncoder passwordEncoder;
@@ -31,7 +33,7 @@ public class SpringSecurity {
     private JwtDecoder jwtDecoder;
 
     @Bean
-    SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity, HandlerMappingIntrospector introspector)
+    SecurityWebFilterChain securityFilterChain(ServerHttpSecurity httpSecurity, HandlerMappingIntrospector introspector)
             throws Exception {
         return httpSecurity
                 .csrf(csrf -> csrf.disable())

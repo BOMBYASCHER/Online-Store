@@ -1,10 +1,11 @@
 package io.hexlet.repository;
 
 import io.hexlet.model.Category;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.reactive.ReactiveCrudRepository;
+import org.springframework.stereotype.Repository;
+import reactor.core.publisher.Mono;
 
-import java.util.Optional;
-
-public interface CategoryRepository extends JpaRepository<Category, Long> {
-    Optional<Category> findByTitle(String title);
+@Repository
+public interface CategoryRepository extends ReactiveCrudRepository<Category, Long> {
+    Mono<Category> findByTitle(String title);
 }
